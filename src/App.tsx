@@ -10,7 +10,7 @@ import  Game6  from './Game6';
 
 function App() {
   return (
-    <BrowserRouter>
+    <BrowserRouter basename={process.env.PUBLIC_URL}>
       <Routes>
         <Route path={`/`} element={<Game4 />} />
         <Route path={`/test1`} element={<Game1 />} />
